@@ -16,6 +16,8 @@
 		F14EEC162750243400CCAFC2 /* NSLayoutConstraintType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC152750243400CCAFC2 /* NSLayoutConstraintType.swift */; };
 		F14EEC182750246200CCAFC2 /* NSLayoutConstraint+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC172750246200CCAFC2 /* NSLayoutConstraint+Ext.swift */; };
 		F14EEC1B2750249800CCAFC2 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC1A2750249800CCAFC2 /* Array+Ext.swift */; };
+		F14EEC1E2750276D00CCAFC2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC1D2750276D00CCAFC2 /* Coordinator.swift */; };
+		F14EEC202750279B00CCAFC2 /* NavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC1F2750279A00CCAFC2 /* NavigationType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		F14EEC152750243400CCAFC2 /* NSLayoutConstraintType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraintType.swift; sourceTree = "<group>"; };
 		F14EEC172750246200CCAFC2 /* NSLayoutConstraint+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Ext.swift"; sourceTree = "<group>"; };
 		F14EEC1A2750249800CCAFC2 /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
+		F14EEC1D2750276D00CCAFC2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F14EEC1F2750279A00CCAFC2 /* NavigationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F14EEC12275023FF00CCAFC2 /* AutoLayout */,
+				F14EEC1C2750275A00CCAFC2 /* Coordinator */,
 				F14EEC192750248300CCAFC2 /* Extensions */,
 			);
 			path = Common;
@@ -106,6 +111,15 @@
 				F14EEC1A2750249800CCAFC2 /* Array+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F14EEC1C2750275A00CCAFC2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F14EEC1D2750276D00CCAFC2 /* Coordinator.swift */,
+				F14EEC1F2750279A00CCAFC2 /* NavigationType.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F14EEC1E2750276D00CCAFC2 /* Coordinator.swift in Sources */,
 				F14EEC1B2750249800CCAFC2 /* Array+Ext.swift in Sources */,
 				F14EEC162750243400CCAFC2 /* NSLayoutConstraintType.swift in Sources */,
 				F14EEC182750246200CCAFC2 /* NSLayoutConstraint+Ext.swift in Sources */,
@@ -185,6 +200,7 @@
 				F14EEBFD275021DB00CCAFC2 /* AppDelegate.swift in Sources */,
 				F14EEC142750241400CCAFC2 /* AutoLayout.swift in Sources */,
 				F14EEBFF275021DB00CCAFC2 /* SceneDelegate.swift in Sources */,
+				F14EEC202750279B00CCAFC2 /* NavigationType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
