@@ -327,3 +327,9 @@ public class AutoLayout {
     }
 }
 
+extension UIView {
+    var dsl: AutoLayout {
+        return AutoLayout(view: self)
+    }
+}
+
