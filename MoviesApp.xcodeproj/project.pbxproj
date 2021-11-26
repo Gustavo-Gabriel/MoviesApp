@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F14EEBFD275021DB00CCAFC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEBFC275021DB00CCAFC2 /* AppDelegate.swift */; };
 		F14EEBFF275021DB00CCAFC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEBFE275021DB00CCAFC2 /* SceneDelegate.swift */; };
-		F14EEC01275021DB00CCAFC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC00275021DB00CCAFC2 /* ViewController.swift */; };
+		F14EEC01275021DB00CCAFC2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC00275021DB00CCAFC2 /* HomeViewController.swift */; };
 		F14EEC06275021DD00CCAFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14EEC05275021DD00CCAFC2 /* Assets.xcassets */; };
 		F14EEC09275021DD00CCAFC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14EEC07275021DD00CCAFC2 /* LaunchScreen.storyboard */; };
 		F14EEC142750241400CCAFC2 /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC132750241400CCAFC2 /* AutoLayout.swift */; };
@@ -18,13 +18,22 @@
 		F14EEC1B2750249800CCAFC2 /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC1A2750249800CCAFC2 /* Array+Ext.swift */; };
 		F14EEC1E2750276D00CCAFC2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC1D2750276D00CCAFC2 /* Coordinator.swift */; };
 		F14EEC202750279B00CCAFC2 /* NavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC1F2750279A00CCAFC2 /* NavigationType.swift */; };
+		F14EEC232750556500CCAFC2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC222750556500CCAFC2 /* TabBarController.swift */; };
+		F14EEC27275055C500CCAFC2 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC26275055C500CCAFC2 /* TabBarProtocols.swift */; };
+		F14EEC292750565F00CCAFC2 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC282750565F00CCAFC2 /* TabBarCoordinator.swift */; };
+		F14EEC2B275057CF00CCAFC2 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC2A275057CF00CCAFC2 /* TabBarPresenter.swift */; };
+		F14EEC2D2751237800CCAFC2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC2C2751237800CCAFC2 /* AppCoordinator.swift */; };
+		F14EEC2F275124F400CCAFC2 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC2E275124F400CCAFC2 /* ParentViewController.swift */; };
+		F14EEC312751252500CCAFC2 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC302751252500CCAFC2 /* HomeCoordinator.swift */; };
+		F14EEC3427517DA200CCAFC2 /* TabBarItemCoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC3327517DA200CCAFC2 /* TabBarItemCoordinatorFactory.swift */; };
+		F14EEC3627517E1B00CCAFC2 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14EEC3527517E1B00CCAFC2 /* HomeProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F14EEBF9275021DB00CCAFC2 /* MoviesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoviesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F14EEBFC275021DB00CCAFC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F14EEBFE275021DB00CCAFC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F14EEC00275021DB00CCAFC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F14EEC00275021DB00CCAFC2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F14EEC05275021DD00CCAFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F14EEC08275021DD00CCAFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F14EEC0A275021DD00CCAFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,6 +43,15 @@
 		F14EEC1A2750249800CCAFC2 /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		F14EEC1D2750276D00CCAFC2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F14EEC1F2750279A00CCAFC2 /* NavigationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationType.swift; sourceTree = "<group>"; };
+		F14EEC222750556500CCAFC2 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F14EEC26275055C500CCAFC2 /* TabBarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
+		F14EEC282750565F00CCAFC2 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		F14EEC2A275057CF00CCAFC2 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		F14EEC2C2751237800CCAFC2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F14EEC2E275124F400CCAFC2 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		F14EEC302751252500CCAFC2 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		F14EEC3327517DA200CCAFC2 /* TabBarItemCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemCoordinatorFactory.swift; sourceTree = "<group>"; };
+		F14EEC3527517E1B00CCAFC2 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +84,9 @@
 		F14EEBFB275021DB00CCAFC2 /* MoviesApp */ = {
 			isa = PBXGroup;
 			children = (
+				F14EEC212750555800CCAFC2 /* Scenes */,
 				F14EEC10275023C500CCAFC2 /* AppBuilder */,
 				F14EEC11275023E800CCAFC2 /* Common */,
-				F14EEC00275021DB00CCAFC2 /* ViewController.swift */,
 				F14EEC05275021DD00CCAFC2 /* Assets.xcassets */,
 				F14EEC07275021DD00CCAFC2 /* LaunchScreen.storyboard */,
 				F14EEC0A275021DD00CCAFC2 /* Info.plist */,
@@ -81,6 +99,8 @@
 			children = (
 				F14EEBFC275021DB00CCAFC2 /* AppDelegate.swift */,
 				F14EEBFE275021DB00CCAFC2 /* SceneDelegate.swift */,
+				F14EEC2C2751237800CCAFC2 /* AppCoordinator.swift */,
+				F14EEC2E275124F400CCAFC2 /* ParentViewController.swift */,
 			);
 			path = AppBuilder;
 			sourceTree = "<group>";
@@ -120,6 +140,45 @@
 				F14EEC1F2750279A00CCAFC2 /* NavigationType.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F14EEC212750555800CCAFC2 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F14EEC252750557300CCAFC2 /* TabBar */,
+				F14EEC242750556900CCAFC2 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F14EEC242750556900CCAFC2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F14EEC00275021DB00CCAFC2 /* HomeViewController.swift */,
+				F14EEC302751252500CCAFC2 /* HomeCoordinator.swift */,
+				F14EEC3527517E1B00CCAFC2 /* HomeProtocols.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F14EEC252750557300CCAFC2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F14EEC3227517D8200CCAFC2 /* TabBarItem */,
+				F14EEC222750556500CCAFC2 /* TabBarController.swift */,
+				F14EEC26275055C500CCAFC2 /* TabBarProtocols.swift */,
+				F14EEC282750565F00CCAFC2 /* TabBarCoordinator.swift */,
+				F14EEC2A275057CF00CCAFC2 /* TabBarPresenter.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F14EEC3227517D8200CCAFC2 /* TabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				F14EEC3327517DA200CCAFC2 /* TabBarItemCoordinatorFactory.swift */,
+			);
+			path = TabBarItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,12 +252,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F14EEC1E2750276D00CCAFC2 /* Coordinator.swift in Sources */,
+				F14EEC2B275057CF00CCAFC2 /* TabBarPresenter.swift in Sources */,
+				F14EEC27275055C500CCAFC2 /* TabBarProtocols.swift in Sources */,
+				F14EEC292750565F00CCAFC2 /* TabBarCoordinator.swift in Sources */,
+				F14EEC3627517E1B00CCAFC2 /* HomeProtocols.swift in Sources */,
 				F14EEC1B2750249800CCAFC2 /* Array+Ext.swift in Sources */,
 				F14EEC162750243400CCAFC2 /* NSLayoutConstraintType.swift in Sources */,
+				F14EEC2D2751237800CCAFC2 /* AppCoordinator.swift in Sources */,
+				F14EEC232750556500CCAFC2 /* TabBarController.swift in Sources */,
 				F14EEC182750246200CCAFC2 /* NSLayoutConstraint+Ext.swift in Sources */,
-				F14EEC01275021DB00CCAFC2 /* ViewController.swift in Sources */,
+				F14EEC01275021DB00CCAFC2 /* HomeViewController.swift in Sources */,
+				F14EEC3427517DA200CCAFC2 /* TabBarItemCoordinatorFactory.swift in Sources */,
 				F14EEBFD275021DB00CCAFC2 /* AppDelegate.swift in Sources */,
+				F14EEC2F275124F400CCAFC2 /* ParentViewController.swift in Sources */,
 				F14EEC142750241400CCAFC2 /* AutoLayout.swift in Sources */,
+				F14EEC312751252500CCAFC2 /* HomeCoordinator.swift in Sources */,
 				F14EEBFF275021DB00CCAFC2 /* SceneDelegate.swift in Sources */,
 				F14EEC202750279B00CCAFC2 /* NavigationType.swift in Sources */,
 			);
