@@ -1,6 +1,7 @@
 import UIKit
 
 class HomeCoordinator: Coordinator {
+    weak var delegate: HomeCoordinatorDelegate?
     var currentViewController: UIViewController?
     var navigationController: UINavigationController
     

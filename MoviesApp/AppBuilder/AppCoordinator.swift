@@ -6,6 +6,8 @@ class AppCoordinator {
     var navigationController: UINavigationController = UINavigationController()
     weak var window: UIWindow?
     var currentCoordinator: Coordinator?
+    var tabBarCoordinator: Coordinator?
+    var homeCoordinator: HomeCoordinator?
 
     init(window: UIWindow) {
         self.window = window
@@ -16,14 +18,27 @@ class AppCoordinator {
     }
 
     func start() {
-        let coordinator = createHomeCoordinator()
+        let coordinator = createTabBarCoordinator()
         currentCoordinator = coordinator
         coordinator.start(with: .root)
     }
 
-    func createHomeCoordinator() -> HomeCoordinator {
+    private func createHomeCoordinator() -> HomeCoordinator {
         let homeCoordinator = HomeCoordinator(navigationController: self.navigationController)
         return homeCoordinator
+    }
+    
+    private func createTabBarCoordinator() -> TabBarCoordinator {
+        let resolver = CoordinatorResolver(navigationController: self.navigationController)
+        let flows: [TabBarItemFlow] = [.home, .favorites]
+        
+        let tabBarCoordinator = TabBarCoordinator(coordinatorResolver: resolver,
+                                                  tabFlows: flows,
+                                                  mainNavigation: self.navigationController)
+        self.tabBarCoordinator = tabBarCoordinator
+        self.currentCoordinator = tabBarCoordinator
+        
+        return tabBarCoordinator
     }
  }
 

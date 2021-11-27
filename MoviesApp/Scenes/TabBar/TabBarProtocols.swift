@@ -1,5 +1,7 @@
 import UIKit
 
+protocol TabBarCoordinatorDelegate: AnyObject { }
+
 protocol TabBarPresenterType: AnyObject, UITabBarControllerDelegate {
     var delegate: TabBarPresenterDelegate? { get set }
     var currentNavigationController: UINavigationController { get set }
@@ -13,4 +15,8 @@ protocol TabBarPresenterDelegate: AnyObject {
 protocol TabBarItemCoordinatorFactoryType {
     var delegate: TabBarItemCoordinatorFactoryDelegate? { get set }
     func build(for flows: [TabBarItemFlow]) -> [TabBarItemFlow: Coordinator]
+}
+
+protocol TabBarItemFactoryType {
+    func build(for flow: TabBarItemFlow) -> UITabBarItem
 }
